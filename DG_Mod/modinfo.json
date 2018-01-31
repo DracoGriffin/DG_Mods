@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "DG_Mod",
+    "name": "DracoGriffin Mod",
+    "description": "Adds gigantic naked mole rat.",
+    "category": "creatures",
+    "dependencies": [ "dda" ],
+    "obsolete": false
+  }
+]
