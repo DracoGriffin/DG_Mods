@@ -1,0 +1,34 @@
+[
+  {
+    "type": "recipe",
+    "result": "mon_dog_atk_sleep",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_OTHER",
+    "skill_used": "survival",
+    "difficulty": 2,
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "time": 30000,
+    "autolearn": true,
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_sleep", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_armoratk_sleep",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_OTHER",
+    "skill_used": "survival",
+    "difficulty": 2,
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "time": 30000,
+    "autolearn": true,
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_armor_sleep", 1 ] ]
+    ]
+  }
+]

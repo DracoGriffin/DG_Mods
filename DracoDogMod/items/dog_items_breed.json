@@ -1,0 +1,65 @@
+[
+  {
+    "id": "mon_dog_pregnant_sleep",
+    "type": "TOOL",
+    "category": "other",
+    "name": "sleeping pregnant labrador",
+    "description": "Sleeping labrador with a swelling belly of puppies.  Be ready to help assist with the birth when she's fully gestated.",
+    "weight": 35000,
+    "volume": 60,
+    "price": 15000,
+    "to_hit": -2,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "target": "mon_dog_birth",
+      "msg": "The labrador is about to give birth!  Once you start helping, you won't be able to let her go, so deliver those puppies!",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 1,
+      "not_ready_msg": "The dog isn't ready to give birth yet.",
+      "//": "16 days 230400, change to factor of season length later"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "mon_dog_birth",
+    "type": "TOOL",
+    "category": "other",
+    "name": "birthing labrador",
+    "description": "After completing gestation, this labrador has begun to give birth!  You need to help deliver the pups before you can put her away.",
+    "weight": 35000,
+    "volume": 60,
+    "price": 15000,
+    "to_hit": -2,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "flags": [ "NO_UNWIELD", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "mon_dog_pregnant_rest",
+    "type": "TOOL",
+    "category": "other",
+    "name": "resting labrador mother",
+    "description": "This Labrador is resting from the intense labor.",
+    "weight": 35000,
+    "volume": 60,
+    "price": 10000,
+    "to_hit": -2,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "target": "mon_dog_sleep",
+      "msg": "The labrador looks well-rested and ready for activity again.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 1,
+      "not_ready_msg": "The dog is still resting after intense labor.",
+      "//": "2 days 28800"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mon_dog_sleep",
+    "type": "TOOL",
+    "category": "other",
+    "name": "sleeping labrador mutt",
+    "description": "This Labrador Retriever is sleeping.  You can put it in a kennel with another Labrador to try to breed puppies, cover it in armor, train it as an attack dog or wake it up.",
+    "weight": 35000,
+    "volume": 60,
+    "price": 10000,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dog",
+      "friendly_msg": "You pet the dog, rousing it from sleep.",
+      "difficulty": 0,
+      "moves": 100,
+      "place_randomly": true
+    }
+  },
+  {
+    "id": "mon_dog_armor_sleep",
+    "copy-from": "mon_dog_sleep",
+    "type": "TOOL",
+    "name": "sleeping armored labrador",
+    "description": "This armored Labrador Retriever is sleeping.  You can put it in a kennel with another Labrador to try to breed puppies, train it as an attack dog or wake it up.",
+    "weight": 39290,
+    "volume": 70,
+    "price": 13000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dog_armor",
+      "friendly_msg": "You pet the dog, rousing it from sleep.",
+      "difficulty": 0,
+      "moves": 100,
+      "place_randomly": true
+    }
+  },
+  {
+    "id": "mon_dog_atk_sleep",
+    "copy-from": "mon_dog_sleep",
+    "type": "TOOL",
+    "name": "sleeping attack labrador",
+    "description": "This armored Labrador Retriever is sleeping.  You can put it in a kennel with another Labrador to try to breed puppies, cover it in armor or wake it up.",
+    "price": 13000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dog_atk",
+      "friendly_msg": "You pet the dog, rousing it from sleep.",
+      "difficulty": 0,
+      "moves": 100,
+      "place_randomly": true
+    }
+  },
+  {
+    "id": "mon_dog_armoratk_sleep",
+    "copy-from": "mon_dog_armor_sleep",
+    "type": "TOOL",
+    "name": "sleeping armored attack labrador",
+    "description": "This armored attack Labrador Retriever is sleeping.  You can put it in a kennel with another Labrador to try to breed puppies or wake it up.",
+    "price": 16000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratk",
+      "friendly_msg": "You pet the dog, rousing it from sleep.",
+      "difficulty": 0,
+      "moves": 100,
+      "place_randomly": true
+    }
+  }
+]
