@@ -1,13 +1,13 @@
 [
   {
     "type": "recipe",
-    "result": "mon_dog_armor_sleep",
+    "result": "mon_dog_attach_armor",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_OTHER",
     "skill_used": "tailor",
     "difficulty": 4,
     "skills_required": [ "fabrication", 1 ],
-    "time": 30000,
+    "time": 27000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
@@ -20,8 +20,12 @@
   },
   {
     "type": "recipe",
-    "result": "mon_dog_armoratk_sleep",
-    "copy-from": "mon_dog_armor_sleep",
+    "result": "mon_dog_attach_armor_atk",
+    "copy-from": "mon_dog_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
     "components": [
       [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atk_sleep", 1 ] ]
@@ -29,12 +33,11 @@
   },
   {
     "type": "recipe",
-    "result": "mon_dog_sleep",
+    "result": "mon_dog_remove_armor",
     "byproducts": [ [ "kevlar_harness" ] ],
-    "id_suffix": "remove_armor",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_OTHER",
-    "time": 5000,
+    "time": 4000,
     "autolearn": true,
     "components": [
       [ [ "mon_dog_armor_sleep", 1 ] ]
@@ -42,13 +45,8 @@
   },
   {
     "type": "recipe",
-    "result": "mon_dog_atk_sleep",
-    "byproducts": [ [ "kevlar_harness" ] ],
-    "id_suffix": "remove_armor",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_OTHER",
-    "time": 5000,
-    "autolearn": true,
+    "result": "mon_dog_atk_remove_armor",
+    "copy-from": "mon_dog_remove_armor",
     "components": [
       [ [ "mon_dog_armoratk_sleep", 1 ] ]
     ]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mon_dog_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train labrador",
+    "description": "You have nearly finished training this Labrador as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atk",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armor_train_atk",
+    "copy-from": "mon_dog_train_atk",
+    "type": "TOOL",
+    "name": "train armored labrador",
+    "description": "You have nearly finished training this armored Labrador as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratk",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  }
+]

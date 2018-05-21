@@ -1,65 +1,130 @@
 [
   {
+    "id": "mon_dog_pregnant_sleep_pseudo",
+    "type": "TOOL",
+    "category": "other",
+    "name": "breeding labradors",
+    "description": "You placed a pair of Labradors into a small kennel to breed them.  Activate to let the pregnant dog out.",
+    "weight": 61236,
+    "volume": 138,
+    "price": 0,
+    "to_hit": -2,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Remove dog",
+      "target": "mon_dog_pregnant_sleep",
+      "msg": "You remove the pregnant dog from the kennel.",
+      "active": true,
+      "moves": 300,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
     "id": "mon_dog_pregnant_sleep",
     "type": "TOOL",
     "category": "other",
     "name": "sleeping pregnant labrador",
-    "description": "Sleeping labrador with a swelling belly of puppies.  Be ready to help assist with the birth when she's fully gestated.",
-    "weight": 35000,
-    "volume": 60,
+    "description": "Sleeping Labrador with a swelling belly of puppies.  Be ready to help assist with the birth when she's fully gestated.",
+    "weight": 30618,
+    "volume": 69,
     "price": 15000,
     "to_hit": -2,
     "material": [ "flesh" ],
     "symbol": "d",
     "color": "light_gray",
     "use_action": {
+      "menu_text": "Check on",
       "target": "mon_dog_birth",
       "msg": "The labrador is about to give birth!  Once you start helping, you won't be able to let her go, so deliver those puppies!",
+      "target_charges": 1,
+      "active": true,
       "moves": 150,
       "type": "delayed_transform",
-      "transform_age": 1,
+      "transform_age": 100800,
       "not_ready_msg": "The dog isn't ready to give birth yet.",
-      "//": "16 days 230400, change to factor of season length later"
+      "//": "7 days, change to factor of season length later, average canine gestation 58-68 days"
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "mon_dog_birth_pseudo",
+    "type": "TOOL",
+    "category": "other",
+    "name": "deliver labrador puppies",
+    "description": "Activate when you're ready to start delivering puppies!",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -2,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "ammo_type" : "mon_dog_birth_pseudo",
+    "max_charges": 8,
+    "charges_per_use": 1,
+    "turns_per_charge": 2,
+    "revert_to": "mon_dog_pregnant_rest",
+    "use_action": {
+      "menu_text": "Deliver puppies",
+      "type": "place_monster",
+      "monster_id": "mon_dog",
+      "friendly_msg": "You deliver a puppy!",
+      "difficulty": 0,
+      "moves": 100,
+      "place_randomly": true
+    },
+    "flags": [ "NO_DROP", "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
   },
   {
     "id": "mon_dog_birth",
     "type": "TOOL",
     "category": "other",
     "name": "birthing labrador",
-    "description": "After completing gestation, this labrador has begun to give birth!  You need to help deliver the pups before you can put her away.",
-    "weight": 35000,
-    "volume": 60,
+    "description": "After completing gestation, this Labrador has begun to give birth!  You need to help deliver the pups before you can leave her alone.",
+    "weight": 30618,
+    "volume": 69,
     "price": 15000,
     "to_hit": -2,
     "material": [ "flesh" ],
     "symbol": "d",
     "color": "light_gray",
-    "flags": [ "NO_UNWIELD", "UNBREAKABLE_MELEE" ]
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "use_action": {
+      "menu_text": "Deliver puppies",
+      "target": "mon_dog_birth_pseudo",
+      "msg": "You start delivering puppies!",
+      "active": true,
+      "moves": 250,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
   },
   {
     "id": "mon_dog_pregnant_rest",
     "type": "TOOL",
     "category": "other",
     "name": "resting labrador mother",
-    "description": "This Labrador is resting from the intense labor.",
-    "weight": 35000,
-    "volume": 60,
+    "description": "This Labrador is resting from the intense labor.  It will take a few days to recover.",
+    "weight": 30618,
+    "volume": 69,
     "price": 10000,
     "to_hit": -2,
     "material": [ "flesh" ],
     "symbol": "d",
     "color": "light_gray",
     "use_action": {
+      "menu_text": "Check on",
       "target": "mon_dog_sleep",
-      "msg": "The labrador looks well-rested and ready for activity again.",
+      "msg": "The Labrador looks well-rested and ready for activity again.",
       "moves": 150,
       "type": "delayed_transform",
-      "transform_age": 1,
-      "not_ready_msg": "The dog is still resting after intense labor.",
-      "//": "2 days 28800"
+      "transform_age": 28800,
+      "not_ready_msg": "The Labrador is still resting after intense labor.",
+      "//": "2 days"
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "type": "recipe",
-    "result": "mon_dog_pregnant_sleep",
+    "result": "mon_dog_pregnant_sleep_pseudo",
     "byproducts": [ [ "mon_dog_sleep" ] ],
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_OTHER",
@@ -13,20 +13,5 @@
     "autolearn": true,
     "tools": [ [ [ "pet_carrier", -1 ] ] ],
     "components": [ [ [ "mon_dog_sleep", 2 ] ], [ [ "dogfood", 20 ] ] ]
-  },
-  {
-    "type": "recipe",
-    "result": "mon_dog_sleep",
-    "result_mult": 3,
-    "byproducts": [ [ "mon_dog_pregnant_rest" ] ],
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_OTHER",
-    "skill_used": "survival",
-    "skills_required": [ "firstaid", 1 ],
-    "difficulty": 2,
-    "time": 1,
-    "//": "60000",
-    "autolearn": true,
-    "components": [ [ [ "mon_dog_birth", 1 ] ] ]
   }
 ]

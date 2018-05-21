@@ -7,7 +7,7 @@
     "description": "Adds differing dog breeds that can be tamed, trained and bred.",
     "category": "creatures",
     "dependencies": [ "dda" ],
-    "version": "0.1",
+    "version": "0.2",
     "obsolete": false
   }
 ]

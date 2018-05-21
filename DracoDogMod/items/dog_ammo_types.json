@@ -1,0 +1,8 @@
+[
+    {
+        "type" : "ammunition_type",
+        "id" : "mon_dog_birth_pseudo",
+        "name" : "deliver puppy",
+        "default" : "mon_dog_birth"
+    }
+]
