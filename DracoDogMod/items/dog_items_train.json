@@ -37,5 +37,309 @@
       "moves": 1000,
       "place_randomly": true
     }
+  },{
+    "id": "mon_dog_bull_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train bulldog",
+    "description": "You have nearly finished training this American Bulldog as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkbull",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armorbull_train_atk",
+    "copy-from": "mon_dog_bull_train_atk",
+    "type": "TOOL",
+    "name": "train armored bulldog",
+    "description": "You have nearly finished training this armored American Bulldog as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkbull",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_pitbullmix_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train pit bull mix",
+    "description": "You have nearly finished training this Pit Bull mix as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkpitbullmix",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armorpitbullmix_train_atk",
+    "copy-from": "mon_dog_pitbullmix_train_atk",
+    "type": "TOOL",
+    "name": "train armored pit bull mix",
+    "description": "You have nearly finished training this armored Pit Bull mix as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkpitbullmix",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_beagle_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train beagle",
+    "description": "You have nearly finished training this Beagle as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkbeagle",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armorbeagle_train_atk",
+    "copy-from": "mon_dog_beagle_train_atk",
+    "type": "TOOL",
+    "name": "train armored beagle",
+    "description": "You have nearly finished training this armored Beagle as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkbeagle",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_bcollie_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train border collie",
+    "description": "You have nearly finished training this Border Collie as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkbcollie",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armorbcollie_train_atk",
+    "copy-from": "mon_dog_bcollie_train_atk",
+    "type": "TOOL",
+    "name": "train armored border collie",
+    "description": "You have nearly finished training this armored Border Collie as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkbcollie",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_boxer_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train boxer mastiff",
+    "description": "You have nearly finished training this Boxer Mastiff as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkboxer",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armorboxer_train_atk",
+    "copy-from": "mon_dog_boxer_train_atk",
+    "type": "TOOL",
+    "name": "train armored boxer mastiff",
+    "description": "You have nearly finished training this armored Boxer Mastiff as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkboxer",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_chihuahua_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train chihuahua",
+    "description": "You have nearly finished training this Chihuahua as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkchihuahua",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armorchihuahua_train_atk",
+    "copy-from": "mon_dog_chihuahua_train_atk",
+    "type": "TOOL",
+    "name": "train armored chihuahua",
+    "description": "You have nearly finished training this armored Chihuahua as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkchihuahua",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_dachshund_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train dachshund",
+    "description": "You have nearly finished training this Dachshund as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkdachshund",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armordachshund_train_atk",
+    "copy-from": "mon_dog_dachshund_train_atk",
+    "type": "TOOL",
+    "name": "train armored dachshund",
+    "description": "You have nearly finished training this armored Dachshund as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkdachshund",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_gshepherd_train_atk",
+    "type": "TOOL",
+    "category": "other",
+    "name": "train german shepherd",
+    "description": "You have nearly finished training this German Shepherd as an attack dog.  Activate to reward it with a treat.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkgshepherd",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_armorgshepherd_train_atk",
+    "copy-from": "mon_dog_gshepherd_train_atk",
+    "type": "TOOL",
+    "name": "train armored german shepherd",
+    "description": "You have nearly finished training this armored German Shepherd as an attack dog.  Activate to reward it with a treat.",
+    "use_action": {
+      "menu_text": "Reward dog",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkgshepherd",
+      "friendly_msg": "You finish training the dog and reward it with a treat.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
   }
 ]

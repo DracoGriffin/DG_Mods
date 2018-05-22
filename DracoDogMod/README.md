@@ -3,8 +3,8 @@ Collection of Mods for Cataclysm: Dark Days Ahead
 
 To install, place DracoDogMods folder in your /data/mods/ folder.
 
-Breeding:
-Need a pet carrier (acts as a tool), two sleeping dogs (must be same breed), and
+### Breeding:
+Need a pet carrier (acts as a tool), two crated dogs (must be same breed), and
 dog food. One will become the mother, other will be returned (father). Gestation
 takes 7 days (eventually based on season length). Activate pregnant dog, activate
 following items and you should have three (soon to be randomized) dogs spawn near
@@ -12,30 +12,30 @@ your character (soon will be puppies that need to be fed) and a resting mother d
 item that will take 2 days to recover (eventually based on season length).
 You must remove armor before dogs can be bred.
 
-Armoring:
+### Armoring:
 Basic system (will be expanded to have leather, bone, chitin, kevlar and superalloy
 options).
 You can add or remove armor through crafting menu with Kevlar vest or Kevlar dog
-harness (cannot craft yet) and one sleeping dog. You will have to activate dog
+harness (cannot craft yet) and one crated dog. You will have to activate dog
 after crafting completed.
 Essentially improves health (significantly), adds armor to bash/cut, lowers dodge
 (by 1) and speed (mainly by weight, heavier dogs aren't as affected whereas
 smaller dogs are affected more heavily).
 
-Training:
+### Training:
 Basic system (will eventually be expanded: either specific training that leads to
 "certified" attack dog [train dodge, train special attacks, train melee, etc that
 requires sufficient player skill and survival] or incremental stages [partially
 trained dog -> semi-trained dog -> nearly-trained dog -> attack dog]).
 You need suitable skill (attempting under skill requirements can result in loss
 of all items -- including dogs -- there isn't a more complex fail system yet in
-CDDA to prevent losing certain items), dog whistle, dog food and sleeping dog.
+CDDA to prevent losing certain items), dog whistle, dog food and crated dog.
 Training will take significant time (4 hours, subject to change).
 Essentially improves aggression (by 1), damage, dodge (by 1), health (slightly),
 morale, speed. May add "LUNGE" attack and/or remove "HIT_AND_RUN" depending on
 breed.
 
-Morale:
+### Morale:
 Eventually add options to interact with dogs for morale bonuses -- certain breeds
 may offer larger bonuses (particularly those with GUILT flag, like Beagle,
 Chihuahua, Dachshund) -- to also mimic them more as personal dogs rather than
@@ -43,12 +43,37 @@ attack animals.
 
 Changelog:
 
-0.1
-Initial release - can tame and "sleep" labradors.
+#### 0.1
 
-0.2
-You can now tame and "sleep" all breeds.
-Dog whistle now affects all tamed dogs.
-You can now breed labradors (only normal, not trained attack ones yet).
-You can add or remove armor from tamed labradors or attack labradors.
-You can now train labradors as attack dogs.
+- Initial release - can tame and "sleep" labradors.
+
+#### 0.2
+
+- You can now tame and "sleep" all breeds.
+
+- Dog whistle now affects all tamed dogs.
+
+- You can now breed labradors (only normal, not trained attack ones yet).
+
+- You can add or remove armor from tamed labradors or attack labradors.
+
+- You can now train labradors as attack dogs.
+
+#### 0.3
+
+- Added new category 'Animals' with subcategories 'Canine Armor/Breeding/Training'
+to control some of the bloat and clogging up normal categories.
+
+- Changed "sleep" to "crated" syntax to improve vocabulary and not be creepy.
+
+- You can now breed attack dogs with untrained dogs or each other and not lose an attack dog.
+
+- You can now attach and remove armor for all dog breeds.
+
+- You can now train all breeds as attack dogs.
+
+- You can now breed all breeds.
+
+- Boxers gain "GROUP_MORALE" and "SWARMS" from new stat calculation.
+
+- All dog breeds have altered "aggression" from new stat calculation.

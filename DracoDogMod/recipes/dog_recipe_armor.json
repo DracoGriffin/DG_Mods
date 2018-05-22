@@ -2,12 +2,12 @@
   {
     "type": "recipe",
     "result": "mon_dog_attach_armor",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_OTHER",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
     "difficulty": 4,
     "skills_required": [ "fabrication", 1 ],
-    "time": 27000,
+    "time": 13000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
@@ -15,7 +15,7 @@
     ],
     "components": [
       [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
-      [ [ "mon_dog_sleep", 1 ] ]
+      [ [ "mon_dog_crate", 1 ] ]
     ]
   },
   {
@@ -28,19 +28,19 @@
     ],
     "components": [
       [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
-      [ [ "mon_dog_atk_sleep", 1 ] ]
+      [ [ "mon_dog_atk_crate", 1 ] ]
     ]
   },
   {
     "type": "recipe",
     "result": "mon_dog_remove_armor",
     "byproducts": [ [ "kevlar_harness" ] ],
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_OTHER",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "time": 4000,
     "autolearn": true,
     "components": [
-      [ [ "mon_dog_armor_sleep", 1 ] ]
+      [ [ "mon_dog_armor_crate", 1 ] ]
     ]
   },
   {
@@ -48,7 +48,423 @@
     "result": "mon_dog_atk_remove_armor",
     "copy-from": "mon_dog_remove_armor",
     "components": [
-      [ [ "mon_dog_armoratk_sleep", 1 ] ]
+      [ [ "mon_dog_armoratk_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_bull_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_bull_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_bull_attach_armor_atk",
+    "copy-from": "mon_dog_bull_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkbull_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_bull_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armorbull_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkbull_remove_armor",
+    "copy-from": "mon_dog_bull_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkbull_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_pitbullmix_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_pitbullmix_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_pitbullmix_attach_armor_atk",
+    "copy-from": "mon_dog_pitbullmix_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkpitbullmix_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_pitbullmix_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armorpitbullmix_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkpitbullmix_remove_armor",
+    "copy-from": "mon_dog_pitbullmix_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkpitbullmix_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_beagle_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_beagle_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_beagle_attach_armor_atk",
+    "copy-from": "mon_dog_beagle_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkbeagle_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_beagle_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armorbeagle_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkbeagle_remove_armor",
+    "copy-from": "mon_dog_beagle_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkbeagle_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_bcollie_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_bcollie_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_bcollie_attach_armor_atk",
+    "copy-from": "mon_dog_bcollie_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkbcollie_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_bcollie_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armorbcollie_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkbcollie_remove_armor",
+    "copy-from": "mon_dog_bcollie_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkbcollie_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_boxer_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_boxer_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_boxer_attach_armor_atk",
+    "copy-from": "mon_dog_boxer_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkboxer_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_boxer_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armorboxer_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkboxer_remove_armor",
+    "copy-from": "mon_dog_boxer_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkboxer_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_chihuahua_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_chihuahua_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_chihuahua_attach_armor_atk",
+    "copy-from": "mon_dog_chihuahua_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkchihuahua_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_chihuahua_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armorchihuahua_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkchihuahua_remove_armor",
+    "copy-from": "mon_dog_chihuahua_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkchihuahua_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_dachshund_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_dachshund_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_dachshund_attach_armor_atk",
+    "copy-from": "mon_dog_dachshund_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkdachshund_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_dachshund_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armordachshund_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkdachshund_remove_armor",
+    "copy-from": "mon_dog_dachshund_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkdachshund_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_gshepherd_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 13000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_gshepherd_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_gshepherd_attach_armor_atk",
+    "copy-from": "mon_dog_gshepherd_attach_armor",
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "mon_dog_atkgshepherd_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_gshepherd_remove_armor",
+    "byproducts": [ [ "kevlar_harness" ] ],
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "time": 4000,
+    "autolearn": true,
+    "components": [
+      [ [ "mon_dog_armorgshepherd_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_atkgshepherd_remove_armor",
+    "copy-from": "mon_dog_gshepherd_remove_armor",
+    "components": [
+      [ [ "mon_dog_armoratkgshepherd_crate", 1 ] ]
     ]
   }
 ]
