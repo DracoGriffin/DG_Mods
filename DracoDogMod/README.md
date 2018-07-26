@@ -3,15 +3,6 @@ Collection of Mods for Cataclysm: Dark Days Ahead
 
 To install, place DracoDogMods folder in your /data/mods/ folder.
 
-### Breeding:
-Need a pet carrier (acts as a tool), two crated dogs (must be same breed), and
-dog food. One will become the mother, other will be returned (father). Gestation
-takes 7 days (eventually based on season length). Activate pregnant dog, activate
-following items and you should have three (soon to be randomized) dogs spawn near
-your character (soon will be puppies that need to be fed) and a resting mother dog
-item that will take 2 days to recover (eventually based on season length).
-You must remove armor before dogs can be bred.
-
 ### Armoring:
 Basic system (will be expanded to have leather, bone, chitin, kevlar and superalloy
 options).
@@ -93,3 +84,9 @@ to control some of the bloat and clogging up normal categories.
 - Adjusted dog stats.
 
 - Removed breeding due to vanilla breeding ability [no longer manual, but automatic. May want to kennel dogs to replenish supply].
+
+#### 0.4a
+
+- Added CLIMB to qualified dogs that have LEAP.
+
+- Removed breeding explanation from README.

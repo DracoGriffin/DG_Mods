@@ -368,7 +368,7 @@
     "reproduction": { "baby_monster": "mon_dog_bcollie_pup", "baby_count": 4, "baby_timer": 10 }, "//": "4 for size tiny and small",
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "biosignature": { "biosig_item": "feces_dog", "biosig_timer": 6 },
-    "flags": [ "ANIMAL", "BONES", "DOGFOOD", "FAT", "FUR", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "ANIMAL", "BONES", "CLIMB", "DOGFOOD", "FAT", "FUR", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_armorbcollie",
