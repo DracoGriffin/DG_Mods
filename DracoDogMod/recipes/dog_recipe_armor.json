@@ -1,7 +1,7 @@
 [
   {
     "type": "recipe",
-    "result": "mon_dog_attach_armor",
+    "result": "kevlar_harness",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
@@ -14,7 +14,25 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_attach_armor",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 1,
+    "skills_required": [ "fabrication", 1 ],
+    "time": 8000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "SEW", "level": 1 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_crate", 1 ] ]
     ]
   },
@@ -27,7 +45,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atk_crate", 1 ] ]
     ]
   },
@@ -57,16 +75,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_bull_crate", 1 ] ]
     ]
   },
@@ -79,7 +97,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkbull_crate", 1 ] ]
     ]
   },
@@ -109,16 +127,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_pitbullmix_crate", 1 ] ]
     ]
   },
@@ -131,7 +149,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkpitbullmix_crate", 1 ] ]
     ]
   },
@@ -161,16 +179,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_beagle_crate", 1 ] ]
     ]
   },
@@ -183,7 +201,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkbeagle_crate", 1 ] ]
     ]
   },
@@ -213,16 +231,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_bcollie_crate", 1 ] ]
     ]
   },
@@ -235,7 +253,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkbcollie_crate", 1 ] ]
     ]
   },
@@ -265,16 +283,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_boxer_crate", 1 ] ]
     ]
   },
@@ -287,7 +305,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkboxer_crate", 1 ] ]
     ]
   },
@@ -317,16 +335,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_chihuahua_crate", 1 ] ]
     ]
   },
@@ -339,7 +357,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkchihuahua_crate", 1 ] ]
     ]
   },
@@ -369,16 +387,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_dachshund_crate", 1 ] ]
     ]
   },
@@ -391,7 +409,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkdachshund_crate", 1 ] ]
     ]
   },
@@ -421,16 +439,16 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE ARMOR",
     "skill_used": "tailor",
-    "difficulty": 4,
+    "difficulty": 1,
     "skills_required": [ "fabrication", 1 ],
-    "time": 13000,
+    "time": 8000,
     "autolearn": true,
     "qualities": [
       { "id": "SEW", "level": 1 },
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_gshepherd_crate", 1 ] ]
     ]
   },
@@ -443,7 +461,7 @@
       { "id": "CUT", "level": 1 }
     ],
     "components": [
-      [ [ "kevlar", 1 ], [ "kevlar_harness", 1 ] ],
+      [ [ "kevlar_harness", 1 ] ],
       [ [ "mon_dog_atkgshepherd_crate", 1 ] ]
     ]
   },

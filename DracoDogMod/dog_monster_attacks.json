@@ -63,9 +63,9 @@
     "effects": [
       { "id": "grabbed", "duration": 300 }
     ],
-    "hit_dmg_u": "The %1$s bites your %2$s!",
-    "hit_dmg_npc": "The %1$s bites <npcname>'s %2$s!",
-    "no_dmg_msg_u": "The %1$s tries to bite your %2$s, but fails to penetrate your armor!",
-    "no_dmg_msg_npc": "The %1$s tries to bite <npcname>'s %2$s, but fails to penetrate their armor!"
+    "hit_dmg_u": "The %1$s nips at your %2$s!",
+    "hit_dmg_npc": "The %1$s nips at <npcname>'s %2$s!",
+    "no_dmg_msg_u": "The %1$s tries to nips at your %2$s, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to nips at <npcname>'s %2$s, but fails to penetrate their armor!"
   }
 ]

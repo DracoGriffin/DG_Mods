@@ -1,0 +1,13 @@
+[
+   {
+      "type": "region_overlay",
+      "id": "dracodogmod_overlay",         "//": "unique identifier for this overlay",
+      "regions": [ "all" ],                 "//": "A list of regions to which this overlay should be applied",
+      "city": {
+          "shops": {                        "//": "weighted list for park overmap terrains",
+              "animalpound": 2,
+              "animalshelter": 2
+          }
+      }
+   }
+]

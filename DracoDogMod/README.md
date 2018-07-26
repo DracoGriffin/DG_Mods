@@ -77,3 +77,19 @@ to control some of the bloat and clogging up normal categories.
 - Boxers gain "GROUP_MORALE" and "SWARMS" from new stat calculation.
 
 - All dog breeds have altered "aggression" from new stat calculation.
+
+#### 0.4
+
+- Added new animal control vehicle - contains useful items for pets and rarely may contain a crated dog.
+
+- Corrected a lot of descriptions to better detail what you can do with item as well as fixed the nouns.
+
+- Added new animal shelter location - somewhat frequent as veterinarian clinics with items more geared towards pets. Good location to find rare pets.
+
+- Added new animal pound location - somewhat frequent as veterinarian clinics with items more geared towards pets. Good location to find pets.
+
+- Altered armoring dogs to use tailoring 1 if using Kevlar dog harness, otherwise you can now craft Kevlar dog harnesses by repurposing Kevlar vests.
+
+- Adjusted dog stats.
+
+- Removed breeding due to vanilla breeding ability [no longer manual, but automatic. May want to kennel dogs to replenish supply].
