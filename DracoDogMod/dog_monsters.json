@@ -46,6 +46,7 @@
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armor_crate"
   },
   {
@@ -99,17 +100,14 @@
     "copy-from": "mon_dog",
     "type": "MONSTER",
     "name": "bulldog",
-    "description": "A stubborn and lethargic breed, the American Bulldog makes a poor attack dog but a good guard dog.",
+    "description": "The American Bulldog is a hardy, well built dog, that seems suited for surviving the apocalypse.  Can be trained as an attack dog.",
     "size": "MEDIUM",
     "hp": 47,
     "speed": 135,
     "aggression": 4,
-    "morale": 15,
     "melee_skill": 4,
-    "melee_dice": 2,
     "melee_dice_sides": 2,
     "melee_cut": 6,
-    "dodge": 3,
     "vision_night": 4,
     "revert_to_itype": "mon_dog_bull_crate",
     "reproduction": { "baby_monster": "mon_dog_bull_pup", "baby_count": 4, "baby_timer": 10 }, "//": "7 for size medium",
@@ -122,12 +120,13 @@
     "copy-from": "mon_dog_bull",
     "type": "MONSTER",
     "name": "armored bulldog",
-    "description": "A muscular American Bulldog fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.",
+    "description": "A muscular American Bulldog fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
     "hp": 66,
     "speed": 130,
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armorbull_crate"
   },
   {
@@ -144,7 +143,10 @@
     "melee_dice_sides": 3,
     "melee_cut": 7,
     "dodge": 4,
-    "revert_to_itype": "mon_dog_atkbull_crate"
+    "revert_to_itype": "mon_dog_atkbull_crate",
+    "special_attacks": [
+      [ "LUNGE", 15 ]
+    ]
   },
   {
     "id": "mon_dog_armoratkbull",
@@ -161,7 +163,9 @@
     "melee_cut": 7,
     "dodge": 3,
     "revert_to_itype": "mon_dog_armoratkbull_crate",
-    "flags": [ "ANIMAL", "BONES", "DOGFOOD", "FAT", "FUR", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "special_attacks": [
+      [ "LUNGE", 15 ]
+    ]
   },
   {
     "id": "mon_dog_bull_pup",
@@ -211,6 +215,7 @@
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armorpitbullmix_crate"
   },
   {
@@ -297,6 +302,7 @@
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armorbeagle_crate"
   },
   {
@@ -368,7 +374,7 @@
     "reproduction": { "baby_monster": "mon_dog_bcollie_pup", "baby_count": 4, "baby_timer": 10 }, "//": "4 for size tiny and small",
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "biosignature": { "biosig_item": "feces_dog", "biosig_timer": 6 },
-    "flags": [ "ANIMAL", "BONES", "CLIMB", "DOGFOOD", "FAT", "FUR", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "flags": [ "ANIMAL", "BONES", "CLIMBS", "DOGFOOD", "FAT", "FUR", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_armorbcollie",
@@ -381,6 +387,7 @@
     "dodge": 3,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armorbcollie_crate"
   },
   {
@@ -463,6 +470,7 @@
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armorboxer_crate"
   },
   {
@@ -552,6 +560,7 @@
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armorchihuahua_crate"
   },
   {
@@ -633,6 +642,7 @@
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armordachshund_crate"
   },
   {
@@ -711,6 +721,7 @@
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 6,
+    "harvest": "armor_dog",
     "revert_to_itype": "mon_dog_armorgshepherd_crate"
   },
   {

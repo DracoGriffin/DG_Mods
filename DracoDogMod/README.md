@@ -90,3 +90,11 @@ to control some of the bloat and clogging up normal categories.
 - Added CLIMB to qualified dogs that have LEAP.
 
 - Removed breeding explanation from README.
+
+#### 0.4b
+
+- Fix CLIMB flag issue
+
+- Corrected Bulldog to have lunge and attack training description
+
+- Added harvest option to armored dogs for chance to retrieve Kevlar dog harness

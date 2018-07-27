@@ -4,10 +4,10 @@
     "ident": "DracoDogMod",
     "name": "Draco's Dog Mod",
     "authors": [ "DracoGriffin" ],
-    "description": "Adds differing dog breeds that can be tamed, trained and bred.",
+    "description": "Adds differing dog breeds that can be tamed and trained.",
     "category": "creatures",
     "dependencies": [ "dda" ],
-    "version": "0.4",
+    "version": "0.4b",
     "obsolete": false
   }
 ]
