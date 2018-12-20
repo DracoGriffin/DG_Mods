@@ -98,3 +98,9 @@ to control some of the bloat and clogging up normal categories.
 - Corrected Bulldog to have lunge and attack training description
 
 - Added harvest option to armored dogs for chance to retrieve Kevlar dog harness
+
+#### 0.4c
+
+- Removed obsolete files (some parts are now in vanilla gameplay). May cause issues on first load; should be able to save and reload with no more errors.
+
+- Updated harvest for proper values with recent vanilla changes.
