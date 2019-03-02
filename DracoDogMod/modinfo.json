@@ -7,7 +7,7 @@
     "description": "Allows dogs to wear armor and be trained as attack dogs.",
     "category": "creatures",
     "dependencies": [ "dda" ],
-    "version": "0.4c",
+    "version": "0.5",
     "obsolete": false
   }
 ]

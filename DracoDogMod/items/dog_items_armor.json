@@ -152,6 +152,82 @@
       "place_randomly": true
     }
   },{
+    "id": "mon_dog_auscattle_attach_armor",
+    "type": "TOOL",
+    "category": "other",
+    "name": "attach Kevlar harness to cattle dog",
+    "description": "You have nearly finished sizing and attaching a Kevlar dog harness to this Australian Cattle Dog.  Activate to fasten the last straps.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Fasten armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armorauscattle",
+      "friendly_msg": "You fasten the last straps to the dog and set it loose.",
+      "difficulty": 0,
+      "moves": 2000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_auscattle_attach_armor_atk",
+    "copy-from": "mon_dog_auscattle_attach_armor",
+    "type": "TOOL",
+    "name": "attach Kevlar harness to attack cattle dog",
+    "description": "You have nearly finished sizing and attaching a Kevlar dog harness to this trained attack Australian Cattle Dog.  Activate to fasten the last straps.",
+    "use_action": {
+      "menu_text": "Fasten armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkpitbullmix",
+      "friendly_msg": "You fasten the last straps to the dog and set it loose.",
+      "difficulty": 0,
+      "moves": 2000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_auscattle_remove_armor",
+    "type": "TOOL",
+    "category": "other",
+    "name": "remove Kevlar harness from cattle dog",
+    "description": "You have nearly removed the Kevlar harness from this Australian Cattle Dog.  Activate to undo the last straps.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Remove armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_auscattle",
+      "friendly_msg": "You finish removing the armor and release the dog.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_atkauscattle_remove_armor",
+    "copy-from": "mon_dog_auscattle_remove_armor",
+    "type": "TOOL",
+    "name": "remove Kevlar harness from attack cattle dog",
+    "description": "You have nearly removed the Kevlar harness from this trained attack Australian Cattle Dog.  Activate to undo the last straps.",
+    "use_action": {
+      "menu_text": "Remove armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkauscattle",
+      "friendly_msg": "You finish removing the armor and release the dog.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
     "id": "mon_dog_pitbullmix_attach_armor",
     "type": "TOOL",
     "category": "other",
@@ -678,6 +754,158 @@
       "menu_text": "Remove armor",
       "type": "place_monster",
       "monster_id": "mon_dog_atkgshepherd",
+      "friendly_msg": "You finish removing the armor and release the dog.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_gpyrenees_attach_armor",
+    "type": "TOOL",
+    "category": "other",
+    "name": "attach Kevlar harness to great pyrenees",
+    "description": "You have nearly finished sizing and attaching a Kevlar dog harness to this Great Pyrenees.  Activate to fasten the last straps.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Fasten armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armorgpyrenees",
+      "friendly_msg": "You fasten the last straps to the dog and set it loose.",
+      "difficulty": 0,
+      "moves": 2000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_gpyrenees_attach_armor_atk",
+    "copy-from": "mon_dog_gpyrenees_attach_armor",
+    "type": "TOOL",
+    "name": "attach Kevlar harness to attack great pyrenees",
+    "description": "You have nearly finished sizing and attaching a Kevlar dog harness to this trained attack Great Pyrenees.  Activate to fasten the last straps.",
+    "use_action": {
+      "menu_text": "Fasten armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkgpyrenees",
+      "friendly_msg": "You fasten the last straps to the dog and set it loose.",
+      "difficulty": 0,
+      "moves": 2000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_gpyrenees_remove_armor",
+    "type": "TOOL",
+    "category": "other",
+    "name": "remove Kevlar harness from great pyrenees",
+    "description": "You have nearly removed the Kevlar harness from this Great Pyrenees.  Activate to undo the last straps.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Remove armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_gpyrenees",
+      "friendly_msg": "You finish removing the armor and release the dog.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_atkgpyrenees_remove_armor",
+    "copy-from": "mon_dog_gpyrenees_remove_armor",
+    "type": "TOOL",
+    "name": "remove Kevlar harness from attack great pyrenees",
+    "description": "You have nearly removed the Kevlar harness from this trained attack Great Pyrenees.  Activate to undo the last straps.",
+    "use_action": {
+      "menu_text": "Remove armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkgpyrenees",
+      "friendly_msg": "You finish removing the armor and release the dog.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_rottweiler_attach_armor",
+    "type": "TOOL",
+    "category": "other",
+    "name": "attach Kevlar harness to rottweiler",
+    "description": "You have nearly finished sizing and attaching a Kevlar dog harness to this Rottweiler.  Activate to fasten the last straps.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Fasten armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armorrottweiler",
+      "friendly_msg": "You fasten the last straps to the dog and set it loose.",
+      "difficulty": 0,
+      "moves": 2000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_rottweiler_attach_armor_atk",
+    "copy-from": "mon_dog_rottweiler_attach_armor",
+    "type": "TOOL",
+    "name": "attach Kevlar harness to attack rottweiler",
+    "description": "You have nearly finished sizing and attaching a Kevlar dog harness to this trained attack Rottweiler.  Activate to fasten the last straps.",
+    "use_action": {
+      "menu_text": "Fasten armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_armoratkrottweiler",
+      "friendly_msg": "You fasten the last straps to the dog and set it loose.",
+      "difficulty": 0,
+      "moves": 2000,
+      "place_randomly": true
+    }
+  },{
+    "id": "mon_dog_rottweiler_remove_armor",
+    "type": "TOOL",
+    "category": "other",
+    "name": "remove Kevlar harness from rottweiler",
+    "description": "You have nearly removed the Kevlar harness from this Rottweiler.  Activate to undo the last straps.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "to_hit": -3,
+    "material": [ "flesh" ],
+    "symbol": "d",
+    "color": "light_gray",
+    "use_action": {
+      "menu_text": "Remove armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_rottweiler",
+      "friendly_msg": "You finish removing the armor and release the dog.",
+      "difficulty": 0,
+      "moves": 1000,
+      "place_randomly": true
+    },
+    "flags": [ "NO_SALVAGE", "NO_UNWIELD", "TRADER_AVOID" ]
+  },{
+    "id": "mon_dog_atkrottweiler_remove_armor",
+    "copy-from": "mon_dog_rottweiler_remove_armor",
+    "type": "TOOL",
+    "name": "remove Kevlar harness from attack rottweiler",
+    "description": "You have nearly removed the Kevlar harness from this trained attack Rottweiler.  Activate to undo the last straps.",
+    "use_action": {
+      "menu_text": "Remove armor",
+      "type": "place_monster",
+      "monster_id": "mon_dog_atkrottweiler",
       "friendly_msg": "You finish removing the armor and release the dog.",
       "difficulty": 0,
       "moves": 1000,
