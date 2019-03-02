@@ -6,9 +6,8 @@ To install, place DracoDogMods folder in your /data/mods/ folder.
 ### Armoring:
 Basic system (will be expanded to have leather, bone, chitin, kevlar and superalloy
 options).
-You can add or remove armor through crafting menu with Kevlar vest or Kevlar dog
-harness (cannot craft yet) and one crated dog. You will have to activate dog
-after crafting completed.
+You can add or remove armor through crafting menu with Kevlar vest (transform into dog harness) or Kevlar dog
+harness and one crated dog. You will have to activate dog after crafting completed.
 Essentially improves health (significantly), adds armor to bash/cut, lowers dodge
 (by 1) and speed (mainly by weight, heavier dogs aren't as affected whereas
 smaller dogs are affected more heavily).
@@ -18,37 +17,85 @@ Basic system (will eventually be expanded: either specific training that leads t
 "certified" attack dog [train dodge, train special attacks, train melee, etc that
 requires sufficient player skill and survival] or incremental stages [partially
 trained dog -> semi-trained dog -> nearly-trained dog -> attack dog]).
-You need suitable skill (attempting under skill requirements can result in loss
-of all items -- including dogs -- there isn't a more complex fail system yet in
-CDDA to prevent losing certain items), dog whistle, dog food and crated dog.
+You need suitable skill (attempting under skill requirements will result in constant
+failures and wasted time), dog whistle, dog food and crated dog.
 Training will take significant time (4 hours, subject to change).
-Essentially improves aggression (by 1), damage, dodge (by 1), health (slightly),
+Essentially improves aggression, damage, dodge (by 1), health (slightly),
 morale, speed. May add "LUNGE" attack and/or remove "HIT_AND_RUN" depending on
 breed.
 
 ### Morale:
-Eventually add options to interact with dogs for morale bonuses -- certain breeds
-may offer larger bonuses (particularly those with GUILT flag, like Beagle,
-Chihuahua, Dachshund) -- to also mimic them more as personal dogs rather than
-attack animals.
+Added playing with pets in core DDA. May update to increase bonus if playing with "GUILT"
+flags or preferences (when implemented).
+Additionally seek to add "fetch" or other type of activities with pets.
 
 Changelog:
 
-#### 0.1
+#### 0.5
 
-- Initial release - can tame and "sleep" labradors.
+- Update harvest options to new DDA harvest system.
 
-#### 0.2
+- Add Australian Cattle Dog to spawn groups.
 
-- You can now tame and "sleep" all breeds.
+- Increased time before "DOG" spawn group is replaced by "DOG_MID".
 
-- Dog whistle now affects all tamed dogs.
+- Removed duplicate spawn groups compared to DDA master.
 
-- You can now breed labradors (only normal, not trained attack ones yet).
+- Fixed mon_smokey_bear (#2) issue.
 
-- You can add or remove armor from tamed labradors or attack labradors.
+- Updated dog entries to more closely mirror DDA master and cleaned up with proportion/relative flags.
 
-- You can now train labradors as attack dogs.
+- Added Australian Cattle Dog, Great Pyrenees (debug spawn only for now) and Rottweiler (debug spawn only for now) entries and associated armored/attack/armoredattack.
+
+- Removed duplicate biosig compared to DDA master.
+
+- Added chance for crated Australian Cattle Dogs to spawn.
+
+- Removed references to breeding in descriptions (leftover from 0.4).
+
+- Updated weights for crated dogs to match with dog weight plus crate weight (plus kevlar vest if applicable).
+
+- Removed duplicate maps compared to DDA master.
+
+- Changed crafting system to no longer consume items if armor attaching or training failed.
+
+- Experience is no longer granted when training dogs or attaching armor.
+
+#### 0.4c
+
+- Removed obsolete files (some parts are now in vanilla gameplay). May cause issues on first load; should be able to save and reload with no more errors.
+
+- Updated harvest for proper values with recent vanilla changes.
+
+#### 0.4b
+
+- Fix CLIMB flag issue
+
+- Corrected Bulldog to have lunge and attack training description
+
+- Added harvest option to armored dogs for chance to retrieve Kevlar dog harness
+
+#### 0.4a
+
+- Added CLIMB to qualified dogs that have LEAP.
+
+- Removed breeding explanation from README.
+
+#### 0.4
+
+- Added new animal control vehicle - contains useful items for pets and rarely may contain a crated dog.
+
+- Corrected a lot of descriptions to better detail what you can do with item as well as fixed the nouns.
+
+- Added new animal shelter location - somewhat frequent as veterinarian clinics with items more geared towards pets. Good location to find rare pets.
+
+- Added new animal pound location - somewhat frequent as veterinarian clinics with items more geared towards pets. Good location to find pets.
+
+- Altered armoring dogs to use tailoring 1 if using Kevlar dog harness, otherwise you can now craft Kevlar dog harnesses by repurposing Kevlar vests.
+
+- Adjusted dog stats.
+
+- Removed breeding due to vanilla breeding ability [no longer manual, but automatic. May want to kennel dogs to replenish supply].
 
 #### 0.3
 
@@ -69,38 +116,18 @@ to control some of the bloat and clogging up normal categories.
 
 - All dog breeds have altered "aggression" from new stat calculation.
 
-#### 0.4
+#### 0.2
 
-- Added new animal control vehicle - contains useful items for pets and rarely may contain a crated dog.
+- You can now tame and "sleep" all breeds.
 
-- Corrected a lot of descriptions to better detail what you can do with item as well as fixed the nouns.
+- Dog whistle now affects all tamed dogs.
 
-- Added new animal shelter location - somewhat frequent as veterinarian clinics with items more geared towards pets. Good location to find rare pets.
+- You can now breed labradors (only normal, not trained attack ones yet).
 
-- Added new animal pound location - somewhat frequent as veterinarian clinics with items more geared towards pets. Good location to find pets.
+- You can add or remove armor from tamed labradors or attack labradors.
 
-- Altered armoring dogs to use tailoring 1 if using Kevlar dog harness, otherwise you can now craft Kevlar dog harnesses by repurposing Kevlar vests.
+- You can now train labradors as attack dogs.
 
-- Adjusted dog stats.
+#### 0.1
 
-- Removed breeding due to vanilla breeding ability [no longer manual, but automatic. May want to kennel dogs to replenish supply].
-
-#### 0.4a
-
-- Added CLIMB to qualified dogs that have LEAP.
-
-- Removed breeding explanation from README.
-
-#### 0.4b
-
-- Fix CLIMB flag issue
-
-- Corrected Bulldog to have lunge and attack training description
-
-- Added harvest option to armored dogs for chance to retrieve Kevlar dog harness
-
-#### 0.4c
-
-- Removed obsolete files (some parts are now in vanilla gameplay). May cause issues on first load; should be able to save and reload with no more errors.
-
-- Updated harvest for proper values with recent vanilla changes.
+- Initial release - can tame and "sleep" labradors.

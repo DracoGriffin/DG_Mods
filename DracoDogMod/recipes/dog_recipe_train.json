@@ -4,9 +4,7 @@
     "result": "mon_dog_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -30,9 +28,7 @@
     "result": "mon_dog_bull_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -53,12 +49,34 @@
   },
   {
     "type": "recipe",
+    "result": "mon_dog_auscattle_train_atk",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE TRAINING",
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
+    "time": 240000,
+    "autolearn": true,
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_auscattle_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_armorauscattle_train_atk",
+    "copy-from": "mon_dog_auscattle_train_atk",
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_armorauscattle_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
     "result": "mon_dog_pitbullmix_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -82,9 +100,7 @@
     "result": "mon_dog_beagle_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -108,9 +124,7 @@
     "result": "mon_dog_bcollie_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -134,9 +148,7 @@
     "result": "mon_dog_boxer_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -160,9 +172,7 @@
     "result": "mon_dog_chihuahua_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -187,8 +197,7 @@
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
     "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -212,9 +221,7 @@
     "result": "mon_dog_gshepherd_train_atk",
     "category": "CC_ANIMALS",
     "subcategory": "CSC_ANIMALS_CANINE TRAINING",
-    "skill_used": "survival",
-    "difficulty": 2,
-    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "unarmed", 2]],
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
     "time": 240000,
     "autolearn": true,
     "tools": [ [ [ "dog_whistle", -1 ] ] ],
@@ -231,6 +238,54 @@
     "components": [
       [ [ "dogfood", 10 ] ],
       [ [ "mon_dog_armorgshepherd_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_gpyrenees_train_atk",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE TRAINING",
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
+    "time": 240000,
+    "autolearn": true,
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_gpyrenees_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_armorgpyrenees_train_atk",
+    "copy-from": "mon_dog_gpyrenees_train_atk",
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_armorgpyrenees_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_rottweiler_train_atk",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_CANINE TRAINING",
+    "skills_required": [[ "dodge", 2 ], [ "melee", 2 ], [ "survival", 2], [ "unarmed", 2]],
+    "time": 240000,
+    "autolearn": true,
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_rottweiler_crate", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mon_dog_armorrottweiler_train_atk",
+    "copy-from": "mon_dog_rottweiler_train_atk",
+    "tools": [ [ [ "dog_whistle", -1 ] ] ],
+    "components": [
+      [ [ "dogfood", 10 ] ],
+      [ [ "mon_dog_armorrottweiler_crate", 1 ] ]
     ]
   }
 ]
