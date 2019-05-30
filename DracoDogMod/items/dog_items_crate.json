@@ -4,7 +4,7 @@
     "type": "TOOL",
     "category": "other",
     "name": "crated labrador mutt",
-    "description": "A Labrador Retriever in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Labrador Retriever in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 44969,
     "volume": 69,
     "price": 10000,
@@ -22,27 +22,11 @@
     }
   },
   {
-    "id": "mon_dog_armor_crate",
-    "copy-from": "mon_dog_crate",
-    "type": "TOOL",
-    "name": "crated armored labrador",
-    "description": "An armored Labrador Retriever in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armor",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atk_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated attack labrador",
-    "description": "An attack Labrador Retriever in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Labrador Retriever in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -54,27 +38,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratk_crate",
-    "copy-from": "mon_dog_armor_crate",
-    "type": "TOOL",
-    "name": "crated armored attack labrador",
-    "description": "An armored attack Labrador Retriever in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratk",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_bull_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated bulldog",
-    "description": "An American Bulldog in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "An American Bulldog in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 63969,
     "volume": 68,
     "use_action": {
@@ -87,27 +55,11 @@
     }
   },
   {
-    "id": "mon_dog_armorbull_crate",
-    "copy-from": "mon_dog_bull_crate",
-    "type": "TOOL",
-    "name": "crated armored bulldog",
-    "description": "An armored American Bulldog in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorbull",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkbull_crate",
     "copy-from": "mon_dog_bull_crate",
     "type": "TOOL",
     "name": "crated attack bulldog",
-    "description": "An attack American Bulldog in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack American Bulldog in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -119,27 +71,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkbull_crate",
-    "copy-from": "mon_dog_armorbull_crate",
-    "type": "TOOL",
-    "name": "crated armored attack bulldog",
-    "description": "An armored attack American Bulldog in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkbull",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_auscattle_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated cattle dog",
-    "description": "An Australian Cattle Dog in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "An Australian Cattle Dog in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 32969,
     "volume": 54,
     "use_action": {
@@ -152,27 +88,11 @@
     }
   },
   {
-    "id": "mon_dog_armorauscattle_crate",
-    "copy-from": "mon_dog_auscattle_crate",
-    "type": "TOOL",
-    "name": "crated armored cattle dog",
-    "description": "An armored Australian Cattle Dog in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorauscattle",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkauscattle_crate",
     "copy-from": "mon_dog_auscattle_crate",
     "type": "TOOL",
     "name": "crated attack cattle dog",
-    "description": "An attack Australian Cattle Dog in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Australian Cattle Dog in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -184,27 +104,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkauscattle_crate",
-    "copy-from": "mon_dog_armorauscattle_crate",
-    "type": "TOOL",
-    "name": "crated armored attack cattle dog",
-    "description": "An armored attack Australian Cattle Dog in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorauscattle",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_pitbullmix_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated pit bull mix",
-    "description": "A Pit Bull mix in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Pit Bull mix in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 39969,
     "volume": 54,
     "use_action": {
@@ -217,27 +121,11 @@
     }
   },
   {
-    "id": "mon_dog_armorpitbullmix_crate",
-    "copy-from": "mon_dog_pitbullmix_crate",
-    "type": "TOOL",
-    "name": "crated armored pit bull mix",
-    "description": "An armored Pit Bull mix in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorpitbullmix",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkpitbullmix_crate",
     "copy-from": "mon_dog_pitbullmix_crate",
     "type": "TOOL",
     "name": "crated attack pit bull mix",
-    "description": "An attack Pit Bull mix in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Pit Bull mix in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -249,27 +137,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkpitbullmix_crate",
-    "copy-from": "mon_dog_armorpitbullmix_crate",
-    "type": "TOOL",
-    "name": "crated armored attack pit bull mix",
-    "description": "An armored attack Pit Bull mix in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkpitbullmix",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_beagle_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated beagle",
-    "description": "A Beagle in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Beagle in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 24969,
     "volume": 42,
     "use_action": {
@@ -282,27 +154,11 @@
     }
   },
   {
-    "id": "mon_dog_armorbeagle_crate",
-    "copy-from": "mon_dog_beagle_crate",
-    "type": "TOOL",
-    "name": "crated armored beagle",
-    "description": "An armored Beagle in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorbeagle",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkbeagle_crate",
     "copy-from": "mon_dog_beagle_crate",
     "type": "TOOL",
     "name": "crated attack beagle",
-    "description": "An attack Beagle in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Beagle in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -314,27 +170,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkbeagle_crate",
-    "copy-from": "mon_dog_armorbeagle_crate",
-    "type": "TOOL",
-    "name": "crated armored attack beagle",
-    "description": "An armored attack Beagle in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkbeagle",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_bcollie_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated border collie",
-    "description": "A Border Collie in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Border Collie in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 30969,
     "volume": 62,
     "use_action": {
@@ -347,27 +187,11 @@
     }
   },
   {
-    "id": "mon_dog_armorbcollie_crate",
-    "copy-from": "mon_dog_bcollie_crate",
-    "type": "TOOL",
-    "name": "crated armored border collie",
-    "description": "An armored Border Collie in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorbcollie",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkbcollie_crate",
     "copy-from": "mon_dog_bcollie_crate",
     "type": "TOOL",
     "name": "crated attack border collie",
-    "description": "An attack Border Collie in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Border Collie in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -379,27 +203,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkbcollie_crate",
-    "copy-from": "mon_dog_armorbcollie_crate",
-    "type": "TOOL",
-    "name": "crated armored attack border collie",
-    "description": "An armored attack Border Collie in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkbcollie",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_boxer_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated boxer mastiff",
-    "description": "A Boxer Mastiff in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Boxer Mastiff in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 42469,
     "volume": 69,
     "use_action": {
@@ -412,27 +220,11 @@
     }
   },
   {
-    "id": "mon_dog_armorboxer_crate",
-    "copy-from": "mon_dog_boxer_crate",
-    "type": "TOOL",
-    "name": "crated armored boxer mastiff",
-    "description": "An armored Boxer Mastiff in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorboxer",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkboxer_crate",
     "copy-from": "mon_dog_boxer_crate",
     "type": "TOOL",
     "name": "crated attack boxer mastiff",
-    "description": "An attack Boxer Mastiff in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Boxer Mastiff in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -444,27 +236,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkboxer_crate",
-    "copy-from": "mon_dog_armorboxer_crate",
-    "type": "TOOL",
-    "name": "crated armored attack boxer mastiff",
-    "description": "An armored attack Boxer Mastiff in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkboxer",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_chihuahua_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated chihuahua",
-    "description": "A Chihuahua in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Chihuahua in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 4922,
     "volume": 23,
     "use_action": {
@@ -477,27 +253,11 @@
     }
   },
   {
-    "id": "mon_dog_armorchihuahua_crate",
-    "copy-from": "mon_dog_chihuahua_crate",
-    "type": "TOOL",
-    "name": "crated armored chihuahua",
-    "description": "An armored Chihuahua in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorchihuahua",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkchihuahua_crate",
     "copy-from": "mon_dog_chihuahua_crate",
     "type": "TOOL",
     "name": "crated attack chihuahua",
-    "description": "An attack Chihuahua in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Chihuahua in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -509,27 +269,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkchihuahua_crate",
-    "copy-from": "mon_dog_armorchihuahua_crate",
-    "type": "TOOL",
-    "name": "crated armored attack chihuahua",
-    "description": "An armored attack Chihuahua in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkchihuahua",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_dachshund_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated dachshund",
-    "description": "A Dachshund in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Dachshund in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 24969,
     "volume": 26,
     "use_action": {
@@ -542,27 +286,11 @@
     }
   },
   {
-    "id": "mon_dog_armordachshund_crate",
-    "copy-from": "mon_dog_dachshund_crate",
-    "type": "TOOL",
-    "name": "crated armored dachshund",
-    "description": "An armored Dachshund in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armordachshund",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkdachshund_crate",
     "copy-from": "mon_dog_dachshund_crate",
     "type": "TOOL",
     "name": "crated attack dachshund",
-    "description": "An attack Dachshund in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Dachshund in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -574,27 +302,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkdachshund_crate",
-    "copy-from": "mon_dog_armordachshund_crate",
-    "type": "TOOL",
-    "name": "crated armored attack dachshund",
-    "description": "An armored attack Dachshund in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkdachshund",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_gshepherd_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated german shepherd",
-    "description": "A German Shepherd in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A German Shepherd in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 53469,
     "volume": 72,
     "use_action": {
@@ -607,27 +319,11 @@
     }
   },
   {
-    "id": "mon_dog_armorgshepherd_crate",
-    "copy-from": "mon_dog_gshepherd_crate",
-    "type": "TOOL",
-    "name": "crated armored german shepherd",
-    "description": "An armored German Shepherd in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorgshepherd",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkgshepherd_crate",
     "copy-from": "mon_dog_gshepherd_crate",
     "type": "TOOL",
     "name": "crated attack german shepherd",
-    "description": "An attack German Shepherd in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack German Shepherd in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -639,27 +335,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkgshepherd_crate",
-    "copy-from": "mon_dog_armorgshepherd_crate",
-    "type": "TOOL",
-    "name": "crated armored attack german shepherd",
-    "description": "An armored attack German Shepherd in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkgshepherd",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_gpyrenees_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated great pyrenees",
-    "description": "A Great Pyrenees in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Great Pyrenees in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 67469,
     "volume": 72,
     "use_action": {
@@ -672,27 +352,11 @@
     }
   },
   {
-    "id": "mon_dog_armorgpyrenees_crate",
-    "copy-from": "mon_dog_gpyrenees_crate",
-    "type": "TOOL",
-    "name": "crated armored great pyrenees",
-    "description": "An armored Great Pyrenees in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorgpyrenees",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkgpyrenees_crate",
     "copy-from": "mon_dog_gpyrenees_crate",
     "type": "TOOL",
     "name": "crated attack great pyrenees",
-    "description": "An attack Great Pyrenees in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Great Pyrenees in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
@@ -704,27 +368,11 @@
     }
   },
   {
-    "id": "mon_dog_armoratkgpyrenees_crate",
-    "copy-from": "mon_dog_armorgpyrenees_crate",
-    "type": "TOOL",
-    "name": "crated armored attack great pyrenees",
-    "description": "An armored attack Great Pyrenees in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkgpyrenees",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_rottweiler_crate",
     "copy-from": "mon_dog_crate",
     "type": "TOOL",
     "name": "crated rottweiler",
-    "description": "A Rottweiler in a crate.  You can cover it in armor, train it as an attack dog or release it from the crate.",
+    "description": "A Rottweiler in a crate.  You can train it as an attack dog or release it from the crate.",
     "weight": 64969,
     "volume": 72,
     "use_action": {
@@ -737,47 +385,15 @@
     }
   },
   {
-    "id": "mon_dog_armorrottweiler_crate",
-    "copy-from": "mon_dog_rottweiler_crate",
-    "type": "TOOL",
-    "name": "crated armored rottweiler",
-    "description": "An armored Rottweiler in a crate.  You can train it as an attack dog or release it from the crate.",
-    "relative": { "price": 3000, "volume": 9, "weight": 4290 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armorrottweiler",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
     "id": "mon_dog_atkrottweiler_crate",
     "copy-from": "mon_dog_rottweiler_crate",
     "type": "TOOL",
     "name": "crated attack rottweiler",
-    "description": "An attack Rottweiler in a crate.  You can cover it in armor or release it from the crate.",
+    "description": "An attack Rottweiler in a crate.  You can release it from the crate.",
     "relative": { "price": 3000 },
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_dog_atkrottweiler",
-      "friendly_msg": "You release the dog from its crate.",
-      "difficulty": 0,
-      "moves": 100,
-      "place_randomly": true
-    }
-  },
-  {
-    "id": "mon_dog_armoratkrottweiler_crate",
-    "copy-from": "mon_dog_armorrottweiler_crate",
-    "type": "TOOL",
-    "name": "crated armored attack rottweiler",
-    "description": "An armored attack Rottweiler in a crate.  You can release it from the crate.",
-    "relative": { "price": 3000 },
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_dog_armoratkrottweiler",
       "friendly_msg": "You release the dog from its crate.",
       "difficulty": 0,
       "moves": 100,

@@ -5,6 +5,7 @@
     "name": "Labrador mutt",
     "description": "This once-average Labrador mixed breed dog has clearly gone feral.  Though it likely still instinctually trusts humans, it's probably far from domestic by now.",
     "default_faction": "dog",
+    "bodytype": "dog",
     "categories": [ "WILDLIFE" ],
     "species": [ "MAMMAL" ],
     "volume": "30000 ml",
@@ -32,10 +33,7 @@
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
-    "special_attacks": [
-      [ "dogbite", 20 ],
-      [ "EAT_FOOD", 100 ]
-    ],
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ] ],
     "flags": [
       "ANIMAL",
       "DOGFOOD",
@@ -51,19 +49,6 @@
     ]
   },
   {
-    "id": "mon_dog_armor",
-    "copy-from": "mon_dog",
-    "type": "MONSTER",
-    "name": "armored labrador",
-    "description": "A shaggy Labrador Retriever fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.",
-    "proportional": { "hp": 1.5, "speed": 0.9 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_fur",
-    "revert_to_itype": "mon_dog_armor_crate"
-  },
-  {
     "id": "mon_dog_atk",
     "copy-from": "mon_dog",
     "type": "MONSTER",
@@ -72,16 +57,6 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atk_crate"
-  },
-  {
-    "id": "mon_dog_armoratk",
-    "copy-from": "mon_dog_armor",
-    "type": "MONSTER",
-    "name": "armored attack labrador",
-    "description": "A shaggy Labrador Retriever fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.05 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratk_crate"
   },
   {
     "id": "mon_dog_bull",
@@ -104,20 +79,6 @@
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
-    "id": "mon_dog_armorbull",
-    "copy-from": "mon_dog_bull",
-    "type": "MONSTER",
-    "name": "armored bulldog",
-    "looks_like": "mon_dog_bull",
-    "description": "A muscular American Bulldog fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
-    "proportional": { "hp": 1.5, "speed": 0.965 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_leather",
-    "revert_to_itype": "mon_dog_armorbull_crate"
-  },
-  {
     "id": "mon_dog_atkbull",
     "copy-from": "mon_dog_bull",
     "type": "MONSTER",
@@ -127,23 +88,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkbull_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
-  },
-  {
-    "id": "mon_dog_armoratkbull",
-    "copy-from": "mon_dog_armorbull",
-    "type": "MONSTER",
-    "name": "armored attack bulldog",
-    "looks_like": "mon_dog_bull",
-    "description": "A muscular American Bulldog fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.075 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkbull_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
+    "special_attacks": [ [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_auscattle",
@@ -161,30 +106,10 @@
     "melee_cut": 6,
     "dodge": 4,
     "vision_night": 6,
-    "special_attacks": [
-      {
-        "type": "leap",
-        "cooldown": 8,
-        "max_range": 2
-      }
-    ],
+    "special_attacks": [ { "type": "leap", "cooldown": 8, "max_range": 2 } ],
     "reproduction": { "baby_monster": "mon_dog_auscattle_pup", "baby_count": 4, "baby_timer": 270 },
     "//": "1-4 puppies & 270 days per-litter for size small canines",
     "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
-  },
-  {
-    "id": "mon_dog_armorauscattle",
-    "copy-from": "mon_dog_auscattle",
-    "type": "MONSTER",
-    "name": "armored cattle dog",
-    "looks_like": "mon_dog_auscattle",
-    "description": "A darting Australian Cattle Dog fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
-    "proportional": { "hp": 1.5, "speed": 0.9 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_fur",
-    "revert_to_itype": "mon_dog_armorauscattle_crate"
   },
   {
     "id": "mon_dog_atkauscattle",
@@ -196,23 +121,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkauscattle_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
-  },
-  {
-    "id": "mon_dog_armoratkauscattle",
-    "copy-from": "mon_dog_armorauscattle",
-    "type": "MONSTER",
-    "name": "armored attack cattle dog",
-    "looks_like": "mon_dog_auscattle",
-    "description": "A darting Australian Cattle Dog fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.05 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkauscattle_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
+    "special_attacks": [ [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_pitbullmix",
@@ -231,27 +140,10 @@
     "melee_cut": 5,
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_pitbullmix_crate",
-    "special_attacks": [
-      [ "dogbite", 5 ],
-      [ "fdogbite", 15 ]
-    ],
+    "special_attacks": [ [ "dogbite", 5 ], [ "fdogbite", 15 ] ],
     "reproduction": { "baby_monster": "mon_dog_pitbullmix_pup", "baby_count": 4, "baby_timer": 270 },
     "//": "1-4 puppies & 270 days per-litter for size small canines",
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
-  },
-  {
-    "id": "mon_dog_armorpitbullmix",
-    "copy-from": "mon_dog_pitbullmix",
-    "type": "MONSTER",
-    "name": "armored pit bull mix",
-    "looks_like": "mon_dog_pitbullmix",
-    "description": "A ferocious Pit Bull mix fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
-    "proportional": { "hp": 1.5, "speed": 0.9 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_leather",
-    "revert_to_itype": "mon_dog_armorpitbullmix_crate"
   },
   {
     "id": "mon_dog_atkpitbullmix",
@@ -263,23 +155,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkpitbullmix_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
-  },
-  {
-    "id": "mon_dog_armoratkpitbullmix",
-    "copy-from": "mon_dog_armorpitbullmix",
-    "type": "MONSTER",
-    "name": "armored attack pit bull mix",
-    "looks_like": "mon_dog_pitbullmix",
-    "description": "A ferocious Pit Bull mix fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.05 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkpitbullmix_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
+    "special_attacks": [ [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_beagle",
@@ -297,27 +173,25 @@
     "melee_cut": 2,
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_beagle_crate",
-    "special_attacks": [
-      [ "minordogbite", 20 ]
-    ],
+    "special_attacks": [ [ "minordogbite", 20 ] ],
     "fear_triggers": [ "HURT" ],
     "reproduction": { "baby_monster": "mon_dog_beagle_pup", "baby_count": 4, "baby_timer": 270 },
     "//": "1-4 puppies & 270 days per-litter for size tiny canines",
-    "flags": [ "ANIMAL", "DOGFOOD", "GROUP_MORALE", "GUILT", "HARDTOSHOOT", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "SWARMS", "WARM" ]
-  },
-  {
-    "id": "mon_dog_armorbeagle",
-    "copy-from": "mon_dog_beagle",
-    "type": "MONSTER",
-    "name": "armored beagle",
-    "looks_like": "mon_dog_beagle",
-    "description": "A regal Beagle fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.",
-    "proportional": { "hp": 1.5, "speed": 0.9 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_leather",
-    "revert_to_itype": "mon_dog_armorbeagle_crate"
+    "flags": [
+      "ANIMAL",
+      "DOGFOOD",
+      "GROUP_MORALE",
+      "GUILT",
+      "HARDTOSHOOT",
+      "HEARS",
+      "HIT_AND_RUN",
+      "KEENNOSE",
+      "PATH_AVOID_DANGER_1",
+      "SEES",
+      "SMELLS",
+      "SWARMS",
+      "WARM"
+    ]
   },
   {
     "id": "mon_dog_atkbeagle",
@@ -329,17 +203,6 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkbeagle_crate"
-  },
-  {
-    "id": "mon_dog_armoratkbeagle",
-    "copy-from": "mon_dog_armorbeagle",
-    "type": "MONSTER",
-    "name": "armored attack beagle",
-    "looks_like": "mon_dog_beagle",
-    "description": "A regal Beagle fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.05 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkbeagle_crate"
   },
   {
     "id": "mon_dog_bcollie",
@@ -356,30 +219,10 @@
     "melee_cut": 4,
     "dodge": 4,
     "revert_to_itype": "mon_dog_bcollie_crate",
-    "special_attacks": [
-      {
-        "type": "leap",
-        "cooldown": 8,
-        "max_range": 2
-      }
-    ],
+    "special_attacks": [ { "type": "leap", "cooldown": 8, "max_range": 2 } ],
     "reproduction": { "baby_monster": "mon_dog_bcollie_pup", "baby_count": 4, "baby_timer": 270 },
     "//": "1-4 puppies & 270 days per-litter for size small canines",
     "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
-  },
-  {
-    "id": "mon_dog_armorbcollie",
-    "copy-from": "mon_dog_bcollie",
-    "type": "MONSTER",
-    "name": "armored border collie",
-    "looks_like": "mon_dog_bcollie",
-    "description": "A hyper Border Collie fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
-    "proportional": { "hp": 1.5, "speed": 0.9 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_fur",
-    "revert_to_itype": "mon_dog_armorbcollie_crate"
   },
   {
     "id": "mon_dog_atkbcollie",
@@ -391,23 +234,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkbcollie_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
-  },
-  {
-    "id": "mon_dog_armoratkbcollie",
-    "copy-from": "mon_dog_armorbcollie",
-    "type": "MONSTER",
-    "name": "armored attack border collie",
-    "looks_like": "mon_dog_bcollie",
-    "description": "A hyper Border Collie fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.05 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkbcollie_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
+    "special_attacks": [ [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_boxer",
@@ -430,20 +257,6 @@
     "//": "1-4 puppies & 270 days per-litter for size small canines"
   },
   {
-    "id": "mon_dog_armorboxer",
-    "copy-from": "mon_dog_boxer",
-    "type": "MONSTER",
-    "name": "armored boxer mastiff",
-    "looks_like": "mon_dog_boxer",
-    "description": "A stocky Boxer Mastiff fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
-    "proportional": { "hp": 1.5, "speed": 0.9 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_leather",
-    "revert_to_itype": "mon_dog_armorboxer_crate"
-  },
-  {
     "id": "mon_dog_atkboxer",
     "copy-from": "mon_dog_boxer",
     "type": "MONSTER",
@@ -453,23 +266,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkboxer_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
-  },
-  {
-    "id": "mon_dog_armoratkboxer",
-    "copy-from": "mon_dog_armorboxer",
-    "type": "MONSTER",
-    "name": "armored attack boxer mastiff",
-    "looks_like": "mon_dog_boxer",
-    "description": "A stocky Boxer Mastiff fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.05 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkboxer_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
+    "special_attacks": [ [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_chihuahua",
@@ -489,27 +286,23 @@
     "vision_night": 6,
     "harvest": "mammal_tiny",
     "revert_to_itype": "mon_dog_chihuahua_crate",
-    "special_attacks": [
-      [ "minordogbite", 20 ]
-    ],
+    "special_attacks": [ [ "minordogbite", 20 ] ],
     "fear_triggers": [ "HURT" ],
     "reproduction": { "baby_monster": "mon_dog_chihuahua_pup", "baby_count": 3, "baby_timer": 240 },
     "//": "1-3 puppies & 240 days per-litter for size tiny canines",
-    "flags": [ "ANIMAL", "DOGFOOD", "GUILT", "HARDTOSHOOT", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
-  },
-  {
-    "id": "mon_dog_armorchihuahua",
-    "copy-from": "mon_dog_chihuahua",
-    "type": "MONSTER",
-    "name": "armored chihuahua",
-    "looks_like": "mon_dog_chihuahua",
-    "description": "A skittish Chihuahua that is more Kevlar harness than dog.  Moderate bashing and cutting protection, drastically reduced agility and speed.",
-    "proportional": { "hp": 1.5, "speed": 0.35 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_tiny",
-    "revert_to_itype": "mon_dog_armorchihuahua_crate"
+    "flags": [
+      "ANIMAL",
+      "DOGFOOD",
+      "GUILT",
+      "HARDTOSHOOT",
+      "HEARS",
+      "HIT_AND_RUN",
+      "KEENNOSE",
+      "PATH_AVOID_DANGER_1",
+      "SEES",
+      "SMELLS",
+      "WARM"
+    ]
   },
   {
     "id": "mon_dog_atkchihuahua",
@@ -518,20 +311,9 @@
     "name": "attack chihuahua",
     "looks_like": "mon_dog_chihuahua",
     "description": "A skittish Chihuahua that has been trained to embrace its bark rather than its bite.  Improved agility, attack, health, owner bond, and speed.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.10 },
+    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkchihuahua_crate"
-  },
-  {
-    "id": "mon_dog_armoratkchihuahua",
-    "copy-from": "mon_dog_armorchihuahua",
-    "type": "MONSTER",
-    "name": "armored attack chihuahua",
-    "looks_like": "mon_dog_chihuahua",
-    "description": "A skittish Chihuahua fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.  Why would you do this?",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.27 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkchihuahua_crate"
   },
   {
     "id": "mon_dog_dachshund",
@@ -550,27 +332,24 @@
     "vision_night": 6,
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_dachshund_crate",
-    "special_attacks": [
-      [ "minordogbite", 20 ]
-    ],
+    "special_attacks": [ [ "minordogbite", 20 ] ],
     "fear_triggers": [ "HURT" ],
     "reproduction": { "baby_monster": "mon_dog_dachshund_pup", "baby_count": 4, "baby_timer": 270 },
     "//": "1-4 puppies & 270 days per-litter for size small canines",
-    "flags": [ "ANIMAL", "DOGFOOD", "GUILT", "HARDTOSHOOT", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "STUMBLES", "WARM" ]
-  },
-  {
-    "id": "mon_dog_armordachshund",
-    "copy-from": "mon_dog_dachshund",
-    "type": "MONSTER",
-    "name": "armored dachshund",
-    "looks_like": "mon_dog_dachshund",
-    "description": "A long-bodied Dachshund awkwardly maneuvering within a fitted protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.",
-    "proportional": { "hp": 1.5, "speed": 0.9 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_leather",
-    "revert_to_itype": "mon_dog_armordachshund_crate"
+    "flags": [
+      "ANIMAL",
+      "DOGFOOD",
+      "GUILT",
+      "HARDTOSHOOT",
+      "HEARS",
+      "HIT_AND_RUN",
+      "KEENNOSE",
+      "PATH_AVOID_DANGER_1",
+      "SEES",
+      "SMELLS",
+      "STUMBLES",
+      "WARM"
+    ]
   },
   {
     "id": "mon_dog_atkdachshund",
@@ -582,17 +361,6 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkdachshund_crate"
-  },
-  {
-    "id": "mon_dog_armoratkdachshund",
-    "copy-from": "mon_dog_armordachshund",
-    "type": "MONSTER",
-    "name": "armored attack dachshund",
-    "looks_like": "mon_dog_dachshund",
-    "description": "A long-bodied Dachshund fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.  This seems cruel.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.05 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkdachshund_crate"
   },
   {
     "id": "mon_dog_gshepherd",
@@ -613,20 +381,6 @@
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
-    "id": "mon_dog_armorgshepherd",
-    "copy-from": "mon_dog_gshepherd",
-    "type": "MONSTER",
-    "name": "armored german shepherd",
-    "looks_like": "mon_dog_gshepherd",
-    "description": "A noble German Shepherd fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
-    "proportional": { "hp": 1.5, "speed": 0.965 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_small_fur",
-    "revert_to_itype": "mon_dog_armorgshepherd_crate"
-  },
-  {
     "id": "mon_dog_atkgshepherd",
     "copy-from": "mon_dog_gshepherd",
     "type": "MONSTER",
@@ -636,24 +390,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkgshepherd_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ],
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
-  },
-  {
-    "id": "mon_dog_armoratkgshepherd",
-    "copy-from": "mon_dog_armorgshepherd",
-    "type": "MONSTER",
-    "name": "armored attack german shepherd",
-    "looks_like": "mon_dog_gshepherd",
-    "description": "A noble German Shepherd fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.075 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkgshepherd_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ],
+    "special_attacks": [ [ "LUNGE", 15 ] ],
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -681,20 +418,6 @@
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
-    "id": "mon_dog_armorgpyrenees",
-    "copy-from": "mon_dog_gpyrenees",
-    "type": "MONSTER",
-    "name": "armored great pyrenees",
-    "looks_like": "mon_dog_gpyrenees",
-    "description": "A resilient Great Pyrenees fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.",
-    "proportional": { "hp": 1.5, "speed": 0.965 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_fur",
-    "revert_to_itype": "mon_dog_armorgpyrenees_crate"
-  },
-  {
     "id": "mon_dog_atkgpyrenees",
     "copy-from": "mon_dog_gpyrenees",
     "type": "MONSTER",
@@ -704,17 +427,6 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkgpyrenees_crate"
-  },
-  {
-    "id": "mon_dog_armoratkgpyrenees",
-    "copy-from": "mon_dog_armorgpyrenees",
-    "type": "MONSTER",
-    "name": "armored attack great pyrenees",
-    "looks_like": "mon_dog_gpyrenees",
-    "description": "A resilient Great Pyrenees fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.075 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkgpyrenees_crate"
   },
   {
     "id": "mon_dog_rottweiler",
@@ -740,20 +452,6 @@
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
-    "id": "mon_dog_armorrottweiler",
-    "copy-from": "mon_dog_rottweiler",
-    "type": "MONSTER",
-    "name": "armored rottweiler",
-    "looks_like": "mon_dog_rottweiler",
-    "description": "A brutal Rottweiler fitted with a protective Kevlar harness.  Moderate bashing and cutting protection, reduced agility and speed.  Can be trained as an attack dog.",
-    "proportional": { "hp": 1.5, "speed": 0.965 },
-    "relative": { "dodge": -1 },
-    "armor_bash": 6,
-    "armor_cut": 6,
-    "harvest": "armored_mammal_leather",
-    "revert_to_itype": "mon_dog_armorrottweiler_crate"
-  },
-  {
     "id": "mon_dog_atkrottweiler",
     "copy-from": "mon_dog_rottweiler",
     "type": "MONSTER",
@@ -763,22 +461,6 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkrottweiler_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
-  },
-  {
-    "id": "mon_dog_armoratkrottweiler",
-    "copy-from": "mon_dog_armorrottweiler",
-    "type": "MONSTER",
-    "name": "armored attack rottweiler",
-    "looks_like": "mon_dog_rottweiler",
-    "description": "A brutal Rottweiler fitted with a protective Kevlar harness and trained to fight.  Moderate bashing and cutting protection.  Improved attack, health, and owner bond.",
-    "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.075 },
-    "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_armoratkrottweiler_crate",
-    "special_attacks": [
-      [ "LUNGE", 15 ]
-    ]
+    "special_attacks": [ [ "LUNGE", 15 ] ]
   }
 ]

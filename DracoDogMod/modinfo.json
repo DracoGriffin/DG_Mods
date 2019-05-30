@@ -4,10 +4,10 @@
     "ident": "DracoDogMod",
     "name": "Draco's Dog Mod",
     "authors": [ "DracoGriffin" ],
-    "description": "Allows dogs to wear armor and be trained as attack dogs.",
+    "description": "Adds pet professions and allows training dogs into attack dogs (stat boosts).",
     "category": "creatures",
     "dependencies": [ "dda" ],
-    "version": "0.5",
+    "version": "0.6",
     "obsolete": false
   }
 ]
