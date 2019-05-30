@@ -1,9 +1,9 @@
 [
   {
-    "type" : "item_group",
-    "id" : "dog_crates",
+    "type": "item_group",
+    "id": "dog_crates",
     "subtype": "distribution",
-    "//" : "Crates of various dog breeds weighted by rarity",
+    "//": "Crates of various dog breeds weighted by rarity",
     "items": [
       [ "mon_dog_crate", 33 ],
       [ "mon_dog_bull_crate", 2 ],
