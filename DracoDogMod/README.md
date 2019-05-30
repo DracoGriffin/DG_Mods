@@ -4,32 +4,36 @@ Collection of Mods for Cataclysm: Dark Days Ahead
 To install, place DracoDogMods folder in your /data/mods/ folder.
 
 ### Armoring:
-Basic system (will be expanded to have leather, bone, chitin, kevlar and superalloy
-options).
-You can add or remove armor through crafting menu with Kevlar vest (transform into dog harness) or Kevlar dog
-harness and one crated dog. You will have to activate dog after crafting completed.
-Essentially improves health (significantly), adds armor to bash/cut, lowers dodge
-(by 1) and speed (mainly by weight, heavier dogs aren't as affected whereas
-smaller dogs are affected more heavily).
+* Basic system implemented in core DDA by mlangsdorf.
+* Only protective values are altered, so there are no changes to dodge/health/speed at this time.
+
+* OLD: You can add or remove armor through crafting menu with Kevlar vest (transform into dog harness) or Kevlar dog harness and one crated dog. You will have to activate dog after crafting completed. Essentially improves health (significantly), adds armor to bash/cut, lowers dodge (by 1) and speed (mainly by weight, heavier dogs aren't as affected whereas smaller dogs are affected more heavily).
 
 ### Training:
-Basic system (will eventually be expanded: either specific training that leads to
-"certified" attack dog [train dodge, train special attacks, train melee, etc that
-requires sufficient player skill and survival] or incremental stages [partially
-trained dog -> semi-trained dog -> nearly-trained dog -> attack dog]).
-You need suitable skill (attempting under skill requirements will result in constant
-failures and wasted time), dog whistle, dog food and crated dog.
-Training will take significant time (4 hours, subject to change).
-Essentially improves aggression, damage, dodge (by 1), health (slightly),
-morale, speed. May add "LUNGE" attack and/or remove "HIT_AND_RUN" depending on
-breed.
+* Basic system (will eventually be expanded: either specific training that leads to "certified" attack dog [train dodge, train special attacks, train melee, etc that requires sufficient player skill and survival] or incremental stages [partially trained dog -> semi-trained dog -> nearly-trained dog -> attack dog]).
+* You need suitable skill (attempting under skill requirements will result in constant failures and wasted time), dog whistle, dog food and crated dog.
+* Training will take significant time (4 hours, subject to change).
+* Essentially improves aggression, damage, dodge (by 1), health (slightly), morale, speed. May add "LUNGE" attack and/or remove "HIT_AND_RUN" depending on breed.
 
 ### Morale:
-Added playing with pets in core DDA. May update to increase bonus if playing with "GUILT"
-flags or preferences (when implemented).
-Additionally seek to add "fetch" or other type of activities with pets.
+* Added playing with pets in core DDA. May update to increase bonus if playing with "GUILT" flags or preferences (when implemented).
+* Additionally seek to add "fetch" or other type of activities with pets.
 
 Changelog:
+
+#### 0.6
+
+- Remove harvest.json (pet armor drops when pet is killed).
+
+- Remove all references to armoring dogs and associated items/monsters/recipes/files.
+
+- Add missing limb target from minordogbite.
+
+- Remove monstergroups as it doesn't change core DDA values.
+
+- Updated professions to new starting pet feature and adjusted scores.
+
+- Remove vehicle_groups as it doesn't change core DDA values.
 
 #### 0.5
 
